@@ -1,0 +1,26 @@
+body{
+    background-color: #555045;
+    text-align: center,justify; margin: 0 auto
+}
+section{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5PX;
+}
+.bckgrnd{
+    display: inline-block; 
+    min-width: 81%;
+    max-width: 81%;
+    
+}
+.subimg{
+    display: inline;
+    width: 15%;
+    border: 14px solid #343434;
+    margin-inline: 50px;
+    margin-top: 50PX;
+    margin-bottom: 50px;
+    text-align: center;
+    border-radius: 70%;
+
+}
