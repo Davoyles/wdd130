@@ -2,12 +2,12 @@
 #content{
     max-width: 0px;
     margin: 0 auto;
-/*
-    .logo{
-  margin-left: 50px;
-
-}*/
 }
+.logo{
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
  
     /**/
 body{
@@ -190,7 +190,6 @@ footer a{
   background-color: #6f7564;
   color: #000273;
   text-decoration: none;
-  
   display: inline;
 }
 footer a:hover{
@@ -202,6 +201,10 @@ footer p{
 }
 footer p a{ 
 text-decoration: underline;
+}
+footer p a:hover{
+  background-color: #000274;
+  color: #d9c2a3;
 }
 .icon{
   width: 64px;
