@@ -1,6 +1,6 @@
 body{
     background-color: #555045;
-    text-align: center,justify; margin: 0 auto
+    text-align: center; margin: 0 auto
 }
 section{
     margin: 0 auto;
@@ -15,7 +15,7 @@ section{
 }
 .subimg{
     display: inline;
-    width: 15%;
+    width: 20%;
     border: 14px solid #343434;
     margin-inline: 50px;
     margin-top: 50PX;
