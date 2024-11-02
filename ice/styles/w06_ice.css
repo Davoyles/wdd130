@@ -16,7 +16,7 @@ img{
 }
 .grid-container div{
     z-index: -5;
-    background-color: #555555;
+    background-color: #557555;
     grid-column: 2/3;
     grid-row: 1/3;
 }
