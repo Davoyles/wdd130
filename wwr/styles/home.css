@@ -5,8 +5,13 @@
 
 }
 .logo{  
-  margin-left: 150px;
-  z-index: 10;
+  height: 50%;
+  width:50%;
+}
+#logo_link{
+  justify-self: center;
+  align-self: center;
+  padding-top: 20px;
 }
     /**/
 body{
@@ -32,21 +37,11 @@ nav{
   display: flex;
   justify-content: space-around;
 }
-#logo_link{
-  padding-top: 5px;
-  justify-self: center;
-  align-self: center;
-}
 nav a{
-  display: inline;
   text-align: center;
-  background-color: #000273;
   color:#bdcdcd;
-  text-decoration: underline;
-  max-width: 80px;
-  padding: 25px;
-  margin: 300px;
-  max-block-size: 50px 20px;
+  text-decoration: none;
+  padding: 40px 20px;
 }
 a{
   display: block;
@@ -60,7 +55,7 @@ h1{
 h2{
   margin: 0;
   margin-top: 20px;
-  text-decoration: underline #000272;
+  text-decoration: none;
 }
 H4{
   display: block;
@@ -108,9 +103,8 @@ section{
   height: 725px;
   background-color: #40A0A2;
   color: #d9c2a3;
-  grid-column: 1/11;
-  grid-row: 4/9;
-
+  grid-column:1/11;
+  grid-row:4/9;
 }
 body{
   background-color: #00A0Af;
@@ -121,23 +115,14 @@ body{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 .rivers-card{
-  margin-top: 150px;
-  margin-left: 120px;
-  margin-bottom: 50px;
   grid-column: 2/4;
   grid-row: 2/3;
 }
 .camping-card{
-  margin-top: 50px;
-  margin-left: 120px;
-  margin-bottom: 50px;
   grid-column: 5/7;
   grid-row: 2/3;
 }
 .rapids-card{
-  margin-top: 50px;
-  margin-left: 120px;
-  margin-bottom: 50px;
   grid-column: 8/10;
   grid-row: 2/3;
 }
@@ -221,7 +206,7 @@ font-family: 'Rock Salt', 'Bradley Hand', sans serif;
 .card-img{
   width: 100%;
   margin-top: 15px;
-  border: 10px solid #d9c2a3;
+  border: 8px solid #d9c2a3;
   border-radius: 20px;
   transition: transfrom .5s;
   box-shadow: 5px 5px 10px #6f8064;
