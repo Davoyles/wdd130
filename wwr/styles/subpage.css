@@ -1,0 +1,30 @@
+#seg1{
+display: grid;
+grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+margin-top: -100;
+width: 80%;
+}
+.id{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    padding: 25px;
+}
+.ut{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    padding: 25px;
+}
+.az{
+    grid-column: 6/7;
+    grid-row: 3/4;
+    padding: 25px;
+}
+.img_tiles{
+    width: 600px;
+    height: 300px;
+    padding: 25px;
+}
+.tile_head{
+    margin-left: 100px;
+    margin-right: 100px;
+}
