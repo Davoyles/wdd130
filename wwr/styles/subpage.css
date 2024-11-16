@@ -60,7 +60,6 @@ h2{
     height: 200px;
     border: 3.5px #2b3264 solid;
     border-radius: 10px;
-    align-items: center;
     background-repeat: no-repeat;
 }
 .img_tiles:hover{
@@ -143,6 +142,7 @@ h2{
     grid-row: 5/6;
     background-image: url("../images/river-wide2-banner.jpg");
     background-size: cover;
+    border: #000140 3px solid;
 }
 #ut_pd:hover{
     scale: 1.05;
@@ -153,6 +153,7 @@ h2{
     grid-row: 5/6;
     background-image: url("../images/river-wide-banner.jpg");
     background-size: cover;
+    border: #000140 3px solid;
 }
 #id_pd:hover{
     scale: 1.05;
@@ -163,6 +164,7 @@ h2{
     grid-row: 5/6;
     background-image: url("../images/river-wide3-banner.jpg");
     background-size: cover;
+    border: #000140 3px solid;
 }
 #az_pd:hover{
     scale: 1.05;
@@ -173,6 +175,7 @@ h2{
     grid-row: 7/8;
     background-image: url("../images/river-wide3-banner.jpg");
     background-size: cover;
+    border: #000140 3px solid;
 }
 #az_pd2:hover{
     scale: 1.05;
