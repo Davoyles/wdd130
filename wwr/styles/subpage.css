@@ -199,10 +199,10 @@ footer{
     grid-row: 8/9;
   }
   footer a{
-    color: #000273;
+    color: #d9c2a3;
     text-decoration: none;
     display: inline; 
-    padding: 50px 0px 0px 5px;
+    padding: 50px 5px 5px 5px;
   }
   footer a:hover{
     background-color: #000274;
@@ -214,7 +214,27 @@ footer{
   footer p a{ 
   text-decoration: underline;
   }
-  footer p :hover{
+  footer p:hover{
     background-color: #000274;
-    color: #d9c2a3;
+    
   }
+  .social_links:hover{
+    background-color: #000250;
+    padding: 5px #000250;
+  }
+  /**/
+  
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+.sm_input

@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/subpage.css">
+    <title>Contact us</title>
+<link rel="stylesheet" href="styles/subpage.css">
 </head>
-<body>
-    <p>Wee Haavee beeen coontaacted byy yyoouu</p>
+<Main><body>    
+    <div id="feedback"></div>
+   <form>   
+    <input type="Name" class="sm_input" id="user_name
+    ">
+    <input type="Comment" class="lg_input">
+    <input type="email" class="sm_input">
+    <button type="submit"> Sumbit message</button>
+   </form>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', 
+    function(e) {e.preventDefault();
+        // set the contents of our feedback element to message the user so they know the form was submitted.
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back to you ASAP!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+                    
+</body>
+</Main>
+<footer>
+    <p>Dry Oar &copy; 2024 - Gillingwater, Zack</p>
+    <p><a href="site-plan-rafting.html">Site Plan</a></p>
+    <p><a href="contactus.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com">
+            <img class="social_links" src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com">
+            <img class="social_links" src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com">
+            <img class="social_links" src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
 </body>
 </html>
