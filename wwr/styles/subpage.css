@@ -1,3 +1,41 @@
+header{
+    display: grid;
+    grid-template-columns: 150px auto;      
+    background-color: #070876;
+    color: #d9c2a3;
+    grid-row: 0/1;
+    grid-column: 1/5;
+    margin-bottom: 75px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#logo_link{
+    justify-self: center;
+    align-self: center;
+  }
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-align: justify;
+    color:#bdcdcd;
+    text-decoration: none;
+    padding: 40px 0px;
+}
+nav a:hover{
+    background-color: #40A0A2;
+    color: #d9c2a3;
+    }
+a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.logo {
+    height: 50%;
+    width: 50%;
+  }
 body{
     background-color: #52b2b2;
     color: #d9c2a3;
@@ -223,7 +261,7 @@ footer{
     padding: 5px #000250;
   }
   /**/
-  
+  /**/
 #feedback {
     background-color: antiquewhite;
     position: absolute;
@@ -237,4 +275,72 @@ footer{
 .moveDown {
     margin-top: 3em;
 }
-.sm_input
+.inputs{
+    min-width: 60%;
+    margin: 0px 250px 250px 250px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-row: 1fr 3fr 1fr;
+
+}
+.name_input{
+    margin: 10px 0px 25px 15px center;
+    max-width: 600px;
+    height: 60px;
+    font-size: 24px;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.mail_input{
+    margin: 15px 10px 25px 10px;
+    max-width: 600px;
+    height: 60px;
+    font-size: 24px;
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.lg_input{ 
+    min-width: 60%;
+    height: 250px;
+    font-size: 24px;
+    padding: 50px;
+    grid-row: 4/5;
+    grid-column: 1/5;
+}
+.name_head{
+    text-align: center;
+    max-width: 60%;
+    font-size: 24px;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.mail_head{
+    text-align: center;
+    font-size: 24px;
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.lg_head{ 
+    text-align: center;
+    margin: center;
+    font-size: 24px;
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+button{
+    margin: 20% center;
+    margin: 15px 10px 25px 10px;
+    font-size: 24px;
+    padding: 50px;
+    width: 350px;
+    text-decoration: underline;
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+button:hover{
+    scale: .95;
+}

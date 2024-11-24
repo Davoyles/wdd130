@@ -6,15 +6,26 @@
     <title>Contact us</title>
 <link rel="stylesheet" href="styles/subpage.css">
 </head>
-<Main><body>    
-    <div id="feedback"></div>
+<Main><body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+        </a><nav><br>
+            <a href="index.html">Home</a>
+            <a href="rivers.html">Trips</a>
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav><br>
+    </header>    
+<div id="feedback"></div>
    <form>   
-    <input type="Name" class="sm_input" id="user_name
-    ">
-    <input type="Comment" class="lg_input">
-    <input type="email" class="sm_input">
+    <Section class="inputs">
+    <input type="Name" class="name_input" id="user_name"><p class="name_head">Name</p>
+    <input type="Comment" class="lg_input"><p class="lg_head">E-Mail</p>
+    <input type="email" class="mail_input"><p class="mail_head">Comment</p>
     <button type="submit"> Sumbit message</button>
    </form>
+</Section>
 <script>
     // get the feedback div element so we can do something with it.
     const feedbackElement = document.getElementById('feedback');
