@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><link rel="stylesheet" href="styles/project2.css">
+<body>
+<header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="prjt_imgs/chaos.png" alt="Chaos Logo">
+        </a><nav><br>
+            <a href="project.html">Home</a>
+            <a href="track.html">Track Racing</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav><br>
+</header>
+    
+<Section class="seg1"><div class="form">
+        <p class="name_head">Name</p>
+        <input type="Name" class="name" id="user_name">
+        <p class="mail_head">E-mail</p>
+        <input type="email" class="mail">
+        <p class="date_head">Date</p>
+        <input type="date" class="date">
+        <p class="time_head">Time</p>
+        <input type="time" class="time"><br>
+        <button type="submit"> Sumbit Reservation</button>
+   </form>
+</div>
+    <img src="prjt_imgs/sim3.png" class="cart_imgs2"alt="">
+</Section>
+   
+
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', 
+    function(e) {e.preventDefault();
+        // set the contents of our feedback element to message the user so they know the form was submitted.
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your resevring a time with us. We will send you a confirmation e-mail!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+<p class="main_desc"></p>Do you dream of the high-speed excitement of go-kart racing but want to enjoy it from the comfort and safety of a state-of-the-art simulator? At Chaos Racing, we bring the adrenaline, intensity, and competition of professional go-karting to life with our cutting-edge racing simulators. Perfect for all ages and skill levels, it’s your chance to experience the track like never before.
+    Step into the driver’s seat and feel the rush as you tackle challenging virtual tracks designed to test your reflexes and precision. From tight corners to exhilarating straightaways, every detail is crafted to make you feel like you’re really out there on the racecourse. Whether you’re chasing your personal best, competing against friends, or simply out for a day of fun, our simulators deliver a one-of-a-kind experience.
+    Tickets are just [Insert Price], making it an affordable way to enjoy a thrilling adventure. Whether you’re planning a solo outing, a family day, or a group event, our facility is the perfect destination for unforgettable entertainment. Each race is an opportunity to challenge yourself, improve your skills, and create memories that will leave you smiling long after the checkered flag waves.
+    With our friendly and professional staff on hand, you’ll be guided every step of the way. From explaining the controls to cheering you on during your race, we’re here to ensure you have an incredible time.
+    So why wait? Grab your tickets today and get ready to unleash your inner racer. At Chaos Racing, the thrill of go-karting is just a start button away. Come feel the speed, embrace the challenge, and race toward victory!
+    </p>
+<footer>
+    <p>Dry Oar &copy; 2024 - Gillingwater, Zack</p>
+    <p><a href="site-plan-project.html">Site Plan</a></p>
+    <p><a href="contactus2.html">Contact Us</a></p>
+    <div class="social">
+        <a href="https://facebook.com">
+            <img class="social_links" src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com">
+            <img class="social_links" src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com">
+            <img class="social_links" src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div>
+</footer>
+</body>
+</html>

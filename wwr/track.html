@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><link rel="stylesheet" href="styles/project2.css">
+<body>
+<header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="prjt_imgs/chaos.png" alt="Chaos Logo">
+        </a><nav><br>
+            <a href="project.html">Home</a>
+            <a href="sim.html">Sim Racing</a>
+            <a href="contactus2.html">Contact Us</a>
+        </nav><br>
+</header>
+    
+<Section class="seg1"><div class="form">
+        <p class="name_head">Name</p>
+        <input type="Name" class="name" id="user_name">
+        <p class="mail_head">E-mail</p>
+        <input type="email" class="mail">
+        <p class="date_head">Date</p>
+        <input type="date" class="date">
+        <p class="time_head">Time</p>
+        <input type="time" class="time"><br>
+        <button type="submit"> Sumbit Reservation</button>
+   </form>
+</div>
+   <img src="prjt_imgs/track.jpg" class="cart_imgs2" alt="">
+</Section>
+
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', 
+    function(e) {e.preventDefault();
+        // set the contents of our feedback element to message the user so they know the form was submitted.
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your resevring a time with us. We will send you a confirmation e-mail!'
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+<p class="main_desc">
+    Looking for an adrenaline-filled adventure that’s perfect for family, friends, or a solo thrill? Welcome to Chaos Racing, the ultimate destination for go-kart racing enthusiasts of all ages. Whether you’re a seasoned racer or trying it for the first time, our state-of-the-art outdoor track and high-performance go-karts offer an experience you won’t soon forget.
+Picture this: the hum of engines, the wind rushing past, and the roar of excitement as you take on twists, turns, and straightaways designed to test your skills and push your limits. At Chaos Racing, every lap is a chance to feel the thrill of racing while creating unforgettable memories. From beginners to pros, our track caters to all skill levels, making it the perfect place to challenge yourself or compete with others for ultimate bragging rights.
+Our facility boasts a professionally designed track that combines fast straight stretches, tight corners, and challenging curves to give you the full racing experience. Whether you're racing against friends or chasing your personal best, the exhilaration of navigating the course will leave your heart pounding and your spirit soaring.
+Safety is our top priority, and we ensure every racer is equipped with the proper gear and guidance. Our high-quality, well-maintained go-karts are built for speed and control, providing an exciting yet safe experience for all participants. For younger racers, we offer kid-friendly options to ensure everyone can join the fun.
+With affordable pricing, Chaos Racing is the perfect spot for birthday parties, corporate outings, or just a spontaneous day of excitement. There’s nothing quite like the energy of friendly competition, and our team is here to make sure your experience is as fun and smooth as possible, from the moment you arrive to the final lap.
+Located conveniently at [Insert Address], our go-karting facility is designed with both racers and spectators in mind. Enjoy the action from our comfortable viewing areas, cheer on your friends, or take part in a race yourself. We also offer refreshments and a welcoming atmosphere to ensure your visit is enjoyable from start to finish.
+Don’t just dream about the thrill of racing — come experience it for yourself! Whether you’re looking to sharpen your skills, have a fun outing with friends, or give your kids a day they’ll always remember, Chaos Racing is the ultimate destination for go-kart enthusiasts.
+So, what are you waiting for? The track is ready, the karts are fueled up, and the excitement is waiting for you. Grab your ticket, buckle up, and prepare for an unforgettable racing adventure at Chaos Racing. Victory is just a lap away, and the thrill of the track is calling your name. Join us today and discover why go-karting is the ultimate way to feel alive!
+
+
+</p>
+    <footer>
+        <p>Dry Oar &copy; 2024 - Gillingwater, Zack</p>
+        <p><a href="site-plan-project.html">Site Plan</a></p>
+        <p><a href="contactus2.html">Contact Us</a></p>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img class="social_links" src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img class="social_links" src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com">
+                <img class="social_links" src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
