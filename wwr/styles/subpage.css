@@ -278,10 +278,18 @@ footer{
 .inputs{
     min-width: 60%;
     margin: 0px 250px 250px 250px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr ;
-grid-row: 1fr 3fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-row: 1fr 1fr 3fr 1fr;
 
+}
+.name_head{
+    text-align: center;
+    max-width: 60%;
+    font-size: 24px;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 .name_input{
     margin: 10px 0px 25px 15px center;
@@ -292,6 +300,13 @@ grid-row: 1fr 3fr 1fr;
     grid-column: 1/2;
     grid-row: 2/3;
 }
+.mail_head{
+    text-align: center;
+    font-size: 24px;
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
 .mail_input{
     margin: 15px 10px 25px 10px;
     max-width: 600px;
@@ -301,35 +316,21 @@ grid-row: 1fr 3fr 1fr;
     grid-column: 3/4;
     grid-row: 2/3;
 }
-.lg_input{ 
-    min-width: 60%;
-    height: 250px;
-    font-size: 24px;
-    padding: 50px;
-    grid-row: 4/5;
-    grid-column: 1/5;
-}
-.name_head{
-    text-align: center;
-    max-width: 60%;
-    font-size: 24px;
-    display: grid;
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-.mail_head{
-    text-align: center;
-    font-size: 24px;
-    display: grid;
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
 .lg_head{ 
     text-align: center;
     margin: center;
     font-size: 24px;
     grid-row: 3/4;
     grid-column: 1/2;
+}
+.lg_input{ 
+    min-width: 60%;
+    height: 250px;
+    font-size: 24px;
+    padding: 50px;
+    display: grid;
+    grid-row: 4/5;
+    grid-column: 1/5;
 }
 button{
     margin: 20% center;
