@@ -32,18 +32,12 @@
 </Section>
 
 <script>
-    // get the feedback div element so we can do something with it.
-    const feedbackElement = document.getElementById('feedback');
-    // get the form so we can read what was entered in it.
+    const feedbackElement = document.getElementById('form');
     const formElement = document.forms[0];
-    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
     formElement.addEventListener('submit', 
     function(e) {e.preventDefault();
-        // set the contents of our feedback element to message the user so they know the form was submitted.
-        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your resevring a time with us. We will send you a confirmation e-mail!'
-        // make the feedback element visible.
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your resevring a track race with us. We will send you a confirmation e-mail!';
         feedbackElement.style.display = "block";
-        // add a class to move everything down so our message doesn't cover it.
         document.body.classList.toggle('moveDown');
     });
 </script>
@@ -60,7 +54,7 @@ So, what are you waiting for? The track is ready, the karts are fueled up, and t
 
 </p>
     <footer>
-        <p>Dry Oar &copy; 2024 - Gillingwater, Zack</p>
+        <p>Chaos Racing &copy; 2024 - Gillingwater, Zack</p>
         <p><a href="site-plan-project.html">Site Plan</a></p>
         <p><a href="contactus2.html">Contact Us</a></p>
         <div class="social">
