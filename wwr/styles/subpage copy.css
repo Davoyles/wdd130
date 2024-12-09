@@ -5,6 +5,7 @@ header{
     color: #d9c2a3;
     grid-row: 0/1;
     grid-column: 1/5;
+    max-width: 99%;
     margin-bottom: 75px;
     padding-left: 20px;
     padding-right: 20px;
@@ -330,7 +331,7 @@ footer{
     padding: 50px;
     display: grid;
     grid-row: 4/5;
-    grid-column: 1/5;
+    grid-column: 1/4;
 }
 button{
     margin: 20% center;
