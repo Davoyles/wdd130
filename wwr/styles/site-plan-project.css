@@ -34,11 +34,6 @@ body {
   font-size: 18px;
   text-align: center;
 }
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
-}
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
@@ -172,4 +167,7 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+.wireframes{
+  min-width: 90%;
 }
